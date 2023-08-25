@@ -18,6 +18,9 @@
 		459367292A994CF500A3363D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459367282A994CF500A3363D /* LoginViewModel.swift */; };
 		4593672B2A994D5000A3363D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593672A2A994D5000A3363D /* LoginView.swift */; };
 		4593672D2A994D8300A3363D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593672C2A994D8300A3363D /* CustomTextField.swift */; };
+		459367302A994E7200A3363D /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 4593672F2A994E7200A3363D /* AlertToast */; };
+		459367332A99513A00A3363D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459367322A99513A00A3363D /* RegisterView.swift */; };
+		459367352A99519F00A3363D /* LoginRegisterBindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459367342A99519F00A3363D /* LoginRegisterBindView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,8 @@
 		459367282A994CF500A3363D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4593672A2A994D5000A3363D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4593672C2A994D8300A3363D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		459367322A99513A00A3363D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		459367342A99519F00A3363D /* LoginRegisterBindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterBindView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459367302A994E7200A3363D /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +154,8 @@
 		459367242A994CBC00A3363D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				459367312A994ECA00A3363D /* Login */,
 				459366FB2A994CA000A3363D /* ContentView.swift */,
-				4593672A2A994D5000A3363D /* LoginView.swift */,
 				4593672C2A994D8300A3363D /* CustomTextField.swift */,
 			);
 			path = View;
@@ -161,6 +167,16 @@
 				459367282A994CF500A3363D /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		459367312A994ECA00A3363D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4593672A2A994D5000A3363D /* LoginView.swift */,
+				459367322A99513A00A3363D /* RegisterView.swift */,
+				459367342A99519F00A3363D /* LoginRegisterBindView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +195,9 @@
 			dependencies = (
 			);
 			name = SwiftOtpLogin;
+			packageProductDependencies = (
+				4593672F2A994E7200A3363D /* AlertToast */,
+			);
 			productName = SwiftOtpLogin;
 			productReference = 459366F62A994CA000A3363D /* SwiftOtpLogin.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +270,9 @@
 				Base,
 			);
 			mainGroup = 459366ED2A994CA000A3363D;
+			packageReferences = (
+				4593672E2A994E7200A3363D /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = 459366F72A994CA000A3363D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -296,6 +318,8 @@
 				459366FC2A994CA000A3363D /* ContentView.swift in Sources */,
 				459367292A994CF500A3363D /* LoginViewModel.swift in Sources */,
 				4593672D2A994D8300A3363D /* CustomTextField.swift in Sources */,
+				459367332A99513A00A3363D /* RegisterView.swift in Sources */,
+				459367352A99519F00A3363D /* LoginRegisterBindView.swift in Sources */,
 				459366FA2A994CA000A3363D /* SwiftOtpLoginApp.swift in Sources */,
 				4593672B2A994D5000A3363D /* LoginView.swift in Sources */,
 				459367272A994CD600A3363D /* User.swift in Sources */,
@@ -623,6 +647,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4593672E2A994E7200A3363D /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4593672F2A994E7200A3363D /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4593672E2A994E7200A3363D /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 459366EE2A994CA000A3363D /* Project object */;
 }

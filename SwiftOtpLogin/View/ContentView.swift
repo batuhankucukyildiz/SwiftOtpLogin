@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import AlertToast
 
 
 struct ContentView: View {
+    @State private var emptyInputAlert = false
     var body: some View {
         NavigationStack {
             
@@ -20,9 +22,9 @@ struct ContentView: View {
             
             Spacer()
             Button(action: {
-    
+                emptyInputAlert.toggle()
             }){
-                Text("Register")
+                Text("Login")
                     .font(.system(size:20))
                     .foregroundColor(.white)
                     .fontWeight(.bold)
@@ -41,13 +43,26 @@ struct ContentView: View {
                     .padding(.vertical)
                     .navigationTitle("Verify Phone")
                     .navigationBarTitleDisplayMode(.inline)
-                Button(action: {}){
+                Button(action: {
+                   
+                }){
                     Text("Try Again")
                         .foregroundColor(.black)
                         .fontWeight(.bold)
                         
                 }
-            }
+             }
+            }.toast(isPresenting: $emptyInputAlert){
+                
+                // `.alert` is the default displayMode
+                //AlertToast(displayMode: .hud, type: .systemImage("xmark", .white), style: .style(backgroundColor: .black))
+
+                //Choose .hud to toast alert from the top of the screen
+                //AlertToast(displayMode: .hud, type: .regular, title: "Message Sent!")
+                
+                //Choose .banner to slide/pop alert from the bottom of the screen
+                AlertToast(type: .complete(.green), title: "Login successful", subTitle: nil)
+
             }
             
     }

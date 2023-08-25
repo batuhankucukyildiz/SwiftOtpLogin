@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftOtpLoginApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginRegisterBindView()
         }
     }
 }
