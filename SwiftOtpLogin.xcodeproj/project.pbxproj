@@ -14,6 +14,10 @@
 		4593670B2A994CA100A3363D /* SwiftOtpLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593670A2A994CA100A3363D /* SwiftOtpLoginTests.swift */; };
 		459367152A994CA100A3363D /* SwiftOtpLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459367142A994CA100A3363D /* SwiftOtpLoginUITests.swift */; };
 		459367172A994CA100A3363D /* SwiftOtpLoginUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459367162A994CA100A3363D /* SwiftOtpLoginUITestsLaunchTests.swift */; };
+		459367272A994CD600A3363D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459367262A994CD600A3363D /* User.swift */; };
+		459367292A994CF500A3363D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459367282A994CF500A3363D /* LoginViewModel.swift */; };
+		4593672B2A994D5000A3363D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593672A2A994D5000A3363D /* LoginView.swift */; };
+		4593672D2A994D8300A3363D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593672C2A994D8300A3363D /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		459367102A994CA100A3363D /* SwiftOtpLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftOtpLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		459367142A994CA100A3363D /* SwiftOtpLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOtpLoginUITests.swift; sourceTree = "<group>"; };
 		459367162A994CA100A3363D /* SwiftOtpLoginUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOtpLoginUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		459367262A994CD600A3363D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		459367282A994CF500A3363D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4593672A2A994D5000A3363D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4593672C2A994D8300A3363D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,10 @@
 		459366F82A994CA000A3363D /* SwiftOtpLogin */ = {
 			isa = PBXGroup;
 			children = (
+				459367252A994CC200A3363D /* ViewModel */,
+				459367242A994CBC00A3363D /* View */,
+				459367232A994CB600A3363D /* Model */,
 				459366F92A994CA000A3363D /* SwiftOtpLoginApp.swift */,
-				459366FB2A994CA000A3363D /* ContentView.swift */,
 				459366FD2A994CA100A3363D /* Assets.xcassets */,
 				459366FF2A994CA100A3363D /* Preview Content */,
 			);
@@ -125,6 +135,32 @@
 				459367162A994CA100A3363D /* SwiftOtpLoginUITestsLaunchTests.swift */,
 			);
 			path = SwiftOtpLoginUITests;
+			sourceTree = "<group>";
+		};
+		459367232A994CB600A3363D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				459367262A994CD600A3363D /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		459367242A994CBC00A3363D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				459366FB2A994CA000A3363D /* ContentView.swift */,
+				4593672A2A994D5000A3363D /* LoginView.swift */,
+				4593672C2A994D8300A3363D /* CustomTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		459367252A994CC200A3363D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				459367282A994CF500A3363D /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				459366FC2A994CA000A3363D /* ContentView.swift in Sources */,
+				459367292A994CF500A3363D /* LoginViewModel.swift in Sources */,
+				4593672D2A994D8300A3363D /* CustomTextField.swift in Sources */,
 				459366FA2A994CA000A3363D /* SwiftOtpLoginApp.swift in Sources */,
+				4593672B2A994D5000A3363D /* LoginView.swift in Sources */,
+				459367272A994CD600A3363D /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
